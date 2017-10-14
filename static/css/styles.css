@@ -1,5 +1,6 @@
 body {
     font-family: 'Lato', sans-serif;
+    background-color: #ddd;
 }
 
 /* navbar */
@@ -19,4 +20,44 @@ nav .form-inline input {
 
 nav .form-inline button {
     flex: 0;
+}
+
+/* homepage */
+body > .content {
+    background-color: white;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+
+.col-left, .col-right {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.col-right {
+    background-color: #eee;
+}
+
+@media (min-width: 576px) {
+    body > .content {
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+    }
+    .col-right {
+        border-left: 1px solid #ccc;
+    }
+}
+
+/* footer */
+footer {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+footer p {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 2px;
+    color: #888;
+    font-size: 14px;
 }
