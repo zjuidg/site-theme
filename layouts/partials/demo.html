@@ -1,0 +1,42 @@
+<div class="section left demo">
+    <div class="title"><i class="fa fa-cube" aria-hidden="true"></i> FEATURED PROJECTS</div>
+    <div class="content">
+        <div class="row">
+            {{ $baseUrl := .Site.BaseURL }}
+            {{ range .Site.Params.Demo.Items }}
+            <div class="col-sm-6">
+                <div class="card">
+                    <img class="card-img-top" src="{{ $baseUrl }}{{ .Image }}" alt="Card image cap" height="180">
+                    <div class="card-body">
+                        <h4 class="card-title">
+                            {{ .Title }}
+                            {{ if isset . "Source" }}
+                                <span class="badge badge-dark">{{ .Source }}</span>
+                            {{ end }}
+                        </h4>
+                        <p class="card-text">{{ .Description }}</p>
+                        {{ if isset . "Paper" }}
+                        <a href="{{ .Paper }}" class="btn btn-primary">
+                            <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+                            Paper
+                        </a>
+                        {{ end }}
+                        {{ if isset . "Video" }}
+                        <a href="{{ .Video }}" class="btn btn-info">
+                            <i class="fa fa-file-video-o" aria-hidden="true"></i>
+                            Video
+                        </a>
+                        {{ end }}
+                        {{ if isset . "Demo" }}
+                        <a href="{{ .Demo }}" class="btn btn-success">
+                            <i class="fa fa-cube" aria-hidden="true"></i>
+                            Demo
+                        </a>
+                        {{ end }}
+                    </div>
+                </div>
+            </div>
+            {{ end }}
+        </div>
+    </div>
+</div>

@@ -1,0 +1,13 @@
+<div class="section left news">
+    <div class="title"><i class="fa fa-fire" aria-hidden="true"></i> NEWS AND UPDATES</div>
+    <div class="content">
+        <ul>
+            {{ range .Site.Params.News.Items }}
+            <li>
+                <div class="news_date">{{ .Date }}</div>
+                <div class="news_content">{{ .Summary | safeHTML }}</div>
+            </li>
+            {{ end }}
+        </ul>
+    </div>
+</div>

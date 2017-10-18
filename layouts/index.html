@@ -6,12 +6,16 @@
 <body>
     {{ partial "navbar.html" . }}
     <div class="container content">
+        {{ partial "photos.html" . }}
         <div class="row">
             <div class="col-sm-8 col-left">
-                {{ partial "photos.html" . }}
+                {{ partial "demo.html" . }}
+                {{ partial "publications.html" . }}
+                {{ partial "news.html" . }}
             </div>
             <div class="col-sm col-right">
                 {{ partial "about.html" . }}
+                {{ partial "members.html" . }}
             </div>
         </div>
     </div>

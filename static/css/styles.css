@@ -49,6 +49,222 @@ body > .content {
     }
 }
 
+/* carousel */
+.carousel {
+    margin: 0 -15px;
+}
+
+.carousel-caption h3, .carousel-caption p {
+    text-shadow: 0 0 5px #000;
+}
+
+.carousel-item {
+    background-size: cover !important;
+    background-position: center center !important;
+    background-repeat: no-repeat !important;
+}
+
+/* sections */
+.section.left {
+    margin-top: 10px;
+    margin-left: 15px;
+}
+
+.section.right {
+    margin-top: 15px;
+    font-size: 15px;
+}
+
+.section .title {
+    margin-bottom: 5px;
+    color: #222;
+    font-weight: 700;
+    /*font-size: 1.2em;*/
+}
+
+.section.left .title {
+    font-size: 18px;
+}
+
+.section .title i {
+    padding-right: 6px;
+}
+
+.section.right .title::before {
+    content: '#';
+    color: #3498db;
+    font-size: 16px;
+    display: inline-block;
+    margin-right: 6px;
+}
+
+.section .content {
+    color: #555;
+    padding-left: 15px;
+}
+
+.section.left .content {
+    padding: 15px 20px 0 27px;
+}
+
+/* about section */
+.about {
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.about .logo {
+    float: right;
+    padding-left: 10px;
+    padding-top: 5px;
+}
+
+.about .logo img {
+    width: 100px;
+    border-radius: 50%;
+}
+
+/* demo section */
+.demo .col-sm-6 {
+    padding: 0 10px 22px 10px!important;
+}
+
+.demo .card-body a {
+    margin-right: 5px!important;
+}
+
+.demo .card-body a i {
+    margin-right: 3px;
+}
+
+.demo .card-title .badge {
+    font-size: 0.6em;
+    display: inline-block;
+    margin-left: 3px;
+    transform: translateY(-3px);
+}
+
+/* publications section */
+/*.publications {
+    padding-bottom: 5px;
+}*/
+
+.publications ul, .news ul {
+    margin-left: 60px;
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.publications ul li, .news ul li {
+    padding-bottom: 10px;
+}
+
+.pubyear {
+    float: left;
+    margin-left: -60px;
+    color: #bbb;
+}
+
+.pubauthor, .pubjournal, .pubsupp {
+    font-size: 14px;
+}
+
+.pubauthor span:not(:first-child)::before {
+    content: '/ ';
+}
+
+.pubjournal {
+    font-style: italic;
+}
+
+.pubsupp a {
+    margin-right: 5px;
+    white-space: nowrap;
+    display: block;
+}
+
+@media (min-width: 576px) {
+    .pubtitle, .pubauthor, .pubjournal, .pubsupp {
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+    .pubsupp a {
+        display: inline;
+    }
+}
+
+.pubsupp a i {
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
+.pubsupp a::before {
+    content: '[';
+}
+
+.pubsupp a::after {
+    content: ']';
+}
+
+/* news section */
+.news ul {
+    margin-left: 0;
+}
+
+.news_date {
+    color: #bbb;
+}
+
+/* members section */
+.member-card {
+    float: left;
+    padding-bottom: 10px;
+    padding-right: 10px;
+}
+
+.member-card.professor {
+    float: none;
+}
+
+.member-card.professor .photo {
+    float: left;
+    margin-right: 10px;
+}
+.member-card.professor .name {
+    padding-bottom: 3px;
+}
+
+.members .separator {
+    clear: both;
+    height: 15px;
+}
+
+.member-card .photo {
+    width: 100px;
+    height: 130px;
+    background-position: center center !important;
+    background-size: cover !important;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+.member-card .name {
+    padding-top: 5px;
+    font-weight: 700;
+    text-shadow: 0 0 1px #bbb;
+}
+.member-card .position, .member-card .affiliation {
+    font-size: 14px;
+}
+.member-card .affiliation {
+    font-style: italic;
+}
+.member-card:not(.professor) .name, .member-card:not(.professor) .position {
+    width: 100px;
+    text-align: center;
+}
+
 /* footer */
 footer {
     padding-top: 20px;
