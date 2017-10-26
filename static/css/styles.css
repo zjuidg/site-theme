@@ -111,6 +111,7 @@ body > .content {
 .about {
     text-align: justify;
     text-justify: inter-word;
+    hyphens: auto;
 }
 
 .about .logo {
@@ -130,7 +131,8 @@ body > .content {
 }
 
 .demo .card-body a {
-    margin-right: 5px!important;
+    display: block;
+    margin: 5px;
 }
 
 .demo .card-body a i {
@@ -144,13 +146,40 @@ body > .content {
     transform: translateY(-3px);
 }
 
+.demo .card-img-top {
+    height: 180px;
+    background-size: cover !important;
+    background-position: center center !important;
+    background-repeat: no-repeat !important;
+}
+
+.demo .card-title {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+@media (min-width: 1200px) {
+    .demo .card-body a {
+        display: inline;
+        margin: 0;
+        margin-right: 5px!important;
+    }
+}
+
 /* publications section */
-/*.publications {
-    padding-bottom: 5px;
-}*/
+.publications .content {
+    padding-bottom: 1rem !important;
+}
+
+.publications .more {
+    margin-left: 60px;
+    font-size: 14px;
+}
 
 .publications ul, .news ul {
     margin-left: 60px;
+    margin-bottom: 0px;
     list-style-type: none;
     padding-left: 0;
 }
@@ -201,10 +230,14 @@ body > .content {
 
 .pubsupp a::before {
     content: '[';
+    color: #444;
+    font-weight: 700;
 }
 
 .pubsupp a::after {
     content: ']';
+    color: #444;
+    font-weight: 700;
 }
 
 /* news section */
@@ -221,6 +254,10 @@ body > .content {
     float: left;
     padding-bottom: 10px;
     padding-right: 10px;
+}
+
+.member-card:not(.professor) {
+    padding-right: 35px;
 }
 
 .member-card.professor {
@@ -265,6 +302,15 @@ body > .content {
     text-align: center;
 }
 
+.members .more a {
+    margin: 10px 0 10px 0;
+}
+
+@media (min-width: 1200px), (max-width: 576px)  {
+    .member-card:not(.professor) {
+        padding-right: 8px;
+    }
+}
 /* footer */
 footer {
     padding-top: 20px;

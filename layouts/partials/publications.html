@@ -34,12 +34,13 @@
                     {{ if isset . "DOI" }}
                     <a href="https://dx.doi.org/{{ .DOI }}">
                         <i class="fa fa-external-link" aria-hidden="true"></i>
-                        {{ .DOI }}
+                        Online
                     </a>
                     {{ end }}
                 </div>
             </li>
             {{ end }}
         </ul>
+        <a href="{{ .Site.BaseURL }}publications/" class="more">More publications...</a>
     </div>
 </div>

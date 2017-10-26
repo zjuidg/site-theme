@@ -2,7 +2,7 @@
     <div class="title">MEMBERS</div>
     <div class="content">
         <div class="alert alert-success" role="alert">
-            We are recruiting new PhD and master stu-dents! Check <a href="#">here</a> for more details.
+            We are recruiting new PhD and master stu&shy;dents! Check <a href="#">here</a> for more details.
         </div>
         <div class="member-card professor">
             <div class="photo" style="background: url({{ .Site.BaseURL }}images/people/ycwu.jpg"></div>
@@ -23,5 +23,8 @@
             </div>
         </div>
         {{ end }}
+        <div class="more">
+            <a href="{{ .Site.BaseURL }}people/" class="btn btn-outline-primary btn-sm">View all members</a>
+        </div>
     </div>
 </div>

@@ -6,7 +6,8 @@
             {{ range .Site.Params.Demo.Items }}
             <div class="col-sm-6">
                 <div class="card">
-                    <img class="card-img-top" src="{{ $baseUrl }}{{ .Image }}" alt="Card image cap" height="180">
+                    <div class="card-img-top" style="background: url({{ $baseUrl }}{{ .Image }})"></div>
+                    <!-- <img class="card-img-top" src="{{ $baseUrl }}{{ .Image }}" alt="Card image cap" height="180"> -->
                     <div class="card-body">
                         <h4 class="card-title">
                             {{ .Title }}
