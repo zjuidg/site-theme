@@ -58,6 +58,16 @@ body > .content {
     text-shadow: 0 0 5px #000;
 }
 
+.carousel-caption {
+    left: 0%;
+    right: 0%;
+    bottom: 0%;
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-bottom: 40px;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
 .carousel-item {
     background-size: cover !important;
     background-position: center center !important;
@@ -109,8 +119,8 @@ body > .content {
 
 /* about section */
 .about {
-    text-align: justify;
-    text-justify: inter-word;
+    /* text-align: justify; */
+    /* text-justify: inter-word; */
     hyphens: auto;
 }
 
@@ -144,6 +154,12 @@ body > .content {
     display: inline-block;
     margin-left: 3px;
     transform: translateY(-3px);
+}
+
+.demo .card-text {
+    font-size: 14px;
+    height: 200px;
+    overflow: hidden;
 }
 
 .demo .card-img-top {
@@ -250,6 +266,10 @@ body > .content {
 }
 
 /* members section */
+.members .alert {
+    margin-top: 0.5rem;
+}
+
 .member-card {
     float: left;
     padding-bottom: 10px;
@@ -262,6 +282,12 @@ body > .content {
 
 .member-card.professor {
     float: none;
+}
+
+.member-card .photo a {
+    display: block;
+    width: 100%;
+    height: 100%;
 }
 
 .member-card.professor .photo {
@@ -290,6 +316,9 @@ body > .content {
     padding-top: 5px;
     font-weight: 700;
     text-shadow: 0 0 1px #bbb;
+}
+.member-card:not(.professor) .position {
+    font-size: 12px;
 }
 .member-card .position, .member-card .affiliation {
     font-size: 14px;
