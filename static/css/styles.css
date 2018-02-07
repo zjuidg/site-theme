@@ -352,3 +352,41 @@ footer p {
     color: #888;
     font-size: 14px;
 }
+
+/* publication single page */
+.publication-content-main .title {
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 1.2;
+  color: #343a40;
+  margin: 20px;
+  margin-bottom: 40px;
+}
+.publication-content-main .content {
+  font-size: 15px;
+  color: #555;
+  line-height: 1.5em;
+}
+.publication-content-main .content h1, h2, h3, h4 {
+  font-size: 1.5em;
+}
+.publication-content-aside {
+  font-size: 15px;
+  color: #555;
+  line-height: 1.5em;
+}
+.publication-content-aside img {
+  margin-bottom: 20px;
+}
+.publication-content-aside .title {
+  font-size: 1.5em;
+  margin-bottom: .5rem;
+  margin-top: 1rem;
+}
+.publication-content-aside a {
+  display: block;
+}
+.publication-content-aside a span {
+  color: #555;
+}
