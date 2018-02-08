@@ -357,7 +357,7 @@ footer p {
 .publication-content-main .title {
   text-align: center;
   font-size: 1.8rem;
-  font-weight: 500;
+  font-weight: 700;
   line-height: 1.2;
   color: #343a40;
   margin: 20px;
@@ -370,6 +370,7 @@ footer p {
 }
 .publication-content-main .content h1, h2, h3, h4 {
   font-size: 1.5em;
+  color: #222;
 }
 .publication-content-aside {
   font-size: 15px;
@@ -377,16 +378,35 @@ footer p {
   line-height: 1.5em;
 }
 .publication-content-aside img {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 .publication-content-aside .title {
-  font-size: 1.5em;
   margin-bottom: .5rem;
-  margin-top: 1rem;
+  color: #222;
+  font-weight: 700;
+}
+.publication-content-aside .title::before {
+  content: '#';
+  color: #3498db;
+  font-size: 17px;
+  display: inline-block;
+  margin-right: 6px;
+}
+.publication-content-aside .content {
+  padding-left: 16px;
 }
 .publication-content-aside a {
+  color: #555;
   display: block;
 }
-.publication-content-aside a span {
-  color: #555;
+.publication-content-aside a:hover {
+  color: #3498db;
+}
+.publication-content-aside ul.list {
+  list-style-type: none;
+  padding: 0
+}
+.publication-content-aside ul.list li {
+  padding: 5px 0;
+  margin: 20px 0;
 }

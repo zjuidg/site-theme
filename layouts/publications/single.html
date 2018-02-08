@@ -10,34 +10,45 @@
       {{ if isset .Params "image"}}
         <img src="{{ .Params.image }}" alt="{{ .Title }}" width="100%">
       {{ end }}
-      {{ if isset .Params "demo"}}
-      <div class="title">Project Demo</div>
-      <div class="content">
-        <a href="{{ .Params.demo }}">
-            <i class="fa fa-cube" aria-hidden="true"></i>
-            <span>{{ .Params.shortname }} Demo</span>
-        </a>
-      </div>
-      {{ end }}
-      <div class="title">Resources</div>
-      <div class="content">
-        {{ if isset .Params "paper" }}
-        <a href="{{ .Params.paper }}">
-            <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
-            <span>Paper(PDF)</span>
-        </a>
+
+      <ul class="list">
+        {{ if isset .Params "demo"}}
+        <li>
+          <div class="title">Project Demo</div>
+          <div class="content">
+            <a href="{{ .Params.demo }}">
+                <i class="fa fa-cube" aria-hidden="true"></i>
+                <span>{{ .Params.shortname }} Demo</span>
+            </a>
+          </div>
+        </li>
         {{ end }}
-        {{ if isset .Params "doi" }}
-        <a href="https://dx.doi.org/{{ .Params.doi }}">
-            <i class="fa fa-external-link" aria-hidden="true"></i>
-            <span>DOI Online</span>
-        </a>
+
+        <li>
+          <div class="title">Resources</div>
+          <div class="content">
+            {{ if isset .Params "paper" }}
+            <a href="{{ .Params.paper }}">
+                <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+                <span>Paper(PDF)</span>
+            </a>
+            {{ end }}
+            {{ if isset .Params "doi" }}
+            <a href="https://dx.doi.org/{{ .Params.doi }}">
+                <i class="fa fa-external-link" aria-hidden="true"></i>
+                <span>DOI Online</span>
+            </a>
+            {{ end }}
+          </div>
+        </li>
+
+        {{ if isset .Params "video"}}
+        <li>
+          <div class="title">Video</div>
+          <video src="{{ .Params.video }}" controls="controls" width="100%"></video>
+        </li>
         {{ end }}
-      </div>
-      {{ if isset .Params "video"}}
-      <div class="title">Video</div>
-      <video src="{{ .Params.video }}" controls="controls" width="100%"></video>
-      {{ end }}
+      </ul>
     </div>
 </div>
 {{ end }}
