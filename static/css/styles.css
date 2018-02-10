@@ -372,6 +372,12 @@ footer p {
   font-size: 1.5em;
   color: #222;
 }
+.publication-content-main .content pre {
+  padding: 20px;
+  background: #f3f3f3;
+  color: #636363;
+  line-height: 1.2em;
+}
 .publication-content-aside {
   font-size: 15px;
   color: #555;
@@ -409,4 +415,12 @@ footer p {
 .publication-content-aside ul.list li {
   padding: 5px 0;
   margin: 20px 0;
+}
+.publication-content-main .statcounter-row {
+  text-align: center;
+  color: #555;
+}
+.publication-content-main .statcounter {
+  display: inline;
+  margin-left: 5px;
 }
