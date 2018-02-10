@@ -10,7 +10,13 @@
                     <!-- <img class="card-img-top" src="{{ $baseUrl }}{{ .Image }}" alt="Card image cap" height="180"> -->
                     <div class="card-body">
                         <h4 class="card-title">
-                            {{ .Title }}
+                            {{ if isset . "Page" }}
+                              <a href="{{ .Page }}">
+                                {{ .Title }}
+                              </a>
+                            {{ else }}
+                              {{ .Title }}
+                            {{ end }}
                             {{ if isset . "Source" }}
                                 <span class="badge badge-dark">{{ .Source }}</span>
                             {{ end }}

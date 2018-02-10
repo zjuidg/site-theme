@@ -155,6 +155,9 @@ body > .content {
     margin-left: 3px;
     transform: translateY(-3px);
 }
+.demo .card-title a {
+  color: inherit;
+}
 
 .demo .card-text {
     font-size: 14px;
