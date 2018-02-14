@@ -371,7 +371,10 @@ footer p {
   color: #555;
   line-height: 1.5em;
 }
-.publication-content-main .content h1, h2, h3, h4 {
+.publication-content-main .content h1,
+.publication-content-main .content h2,
+.publication-content-main .content h3,
+.publication-content-main .content h4 {
   font-size: 1.5em;
   color: #222;
 }
@@ -426,4 +429,80 @@ footer p {
 .publication-content-main .statcounter {
   display: inline;
   margin-left: 5px;
+}
+
+/* ittvis-framework */
+.ittvis-framework {
+  padding: 15px;
+}
+.ittvis-framework .title {
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #343a40;
+  margin: 20px;
+  margin-bottom: 40px;
+}
+.ittvis-framework .content {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.5em;
+}
+.ittvis-framework .content h1 {
+  font-size: 1.5em;
+  color: #222;
+  border-bottom: 2px #343a40 solid;
+}
+.ittvis-framework .content pre {
+  padding: 20px;
+  background: #f3f3f3;
+  color: #636363;
+  line-height: 1.2em;
+}
+.ittvis-framework .link,
+.ittvis-framework .link a {
+  color: #555;
+  line-height: 1.2em;
+  font-weight: bolder;
+}
+.ittvis-framework .link a:hover {
+  color: #3498bd;
+}
+.ittvis-framework .link i {
+  margin-right: 10px;
+}
+.ittvis-framework img {
+  width: 100%;
+  margin: 1rem 0;
+}
+.ittvis-framework .publication img {
+  width: calc(100% - 20px);
+  margin-left: 20px;
+}
+.ittvis-framework .content h2 {
+  text-align: center;
+  font-size: 1.2em;
+  line-height: 1.5em;
+  width: 200px;
+  margin: auto;
+  border-radius: 50%;
+  background-color: #444;
+  color: #fff;
+}
+.ittvis-framework .team {
+  display: flex;
+  flex-flow: row wrap;
+  margin-bottom: 20px;
+}
+.ittvis-framework .team .member-card {
+  width: 160px;
+  padding: 10px 5px;
+}
+.ittvis-framework .team .member-card .photo {
+  margin: auto;
+}
+.ittvis-framework .team .member-card .desc .name,
+.ittvis-framework .team .member-card .desc .position {
+  width: auto;
 }
