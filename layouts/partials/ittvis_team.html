@@ -1,0 +1,32 @@
+<div class="section right ittvis-team">
+  <h1>Team</h1>
+  <h2>Core Team</h2>
+  <div class="gallery">
+    {{ $siteUrl := .Site.BaseURL }}
+    {{ range .Site.Params.IttvisCoreTeam.Items }}
+    <div class="member-card">
+        <div class="photo" style="background: url({{ $siteUrl }}{{ .Photo }}">
+            <a href="{{ .URL }}"></a>
+        </div>
+        <div class="desc">
+            <div class="name">{{ .Name }}</div>
+            <div class="position">{{ .Description }}</div>
+        </div>
+    </div>
+    {{ end }}
+  </div>
+  <h2>Collaborators</h2>
+  <div class="gallery">
+    {{ range .Site.Params.IttvisCollaborator.Items }}
+    <div class="member-card">
+        <div class="photo" style="background: url({{ $siteUrl }}{{ .Photo }}">
+            <a href="{{ .URL }}"></a>
+        </div>
+        <div class="desc">
+            <div class="name">{{ .Name }}</div>
+            <div class="position">{{ .Description }}</div>
+        </div>
+    </div>
+    {{ end }}
+  </div>
+</div>

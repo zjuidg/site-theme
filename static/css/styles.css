@@ -364,7 +364,12 @@ footer p {
   line-height: 1.2;
   color: #343a40;
   margin: 20px;
-  margin-bottom: 40px;
+}
+.publication-content-main .subtitle {
+  margin: 15px;
+  font-size: 1.2rem;
+  text-align: right;
+  font-style: italic;
 }
 .publication-content-main .content {
   font-size: 15px;
@@ -422,11 +427,11 @@ footer p {
   padding: 5px 0;
   margin: 20px 0;
 }
-.publication-content-main .statcounter-row {
+.content .statcounter-row {
   text-align: center;
   color: #555;
 }
-.publication-content-main .statcounter {
+.content .statcounter {
   display: inline;
   margin-left: 5px;
 }
@@ -460,6 +465,9 @@ footer p {
   color: #636363;
   line-height: 1.2em;
 }
+.ittvis-framework .section {
+  margin-bottom: 30px;
+}
 .ittvis-framework .link,
 .ittvis-framework .link a {
   color: #555;
@@ -472,7 +480,7 @@ footer p {
 .ittvis-framework .link i {
   margin-right: 10px;
 }
-.ittvis-framework img {
+.ittvis-framework .content img {
   width: 100%;
   margin: 1rem 0;
 }
@@ -480,7 +488,7 @@ footer p {
   width: calc(100% - 20px);
   margin-left: 20px;
 }
-.ittvis-framework .content h2 {
+.ittvis-framework .ittvis-team h2 {
   text-align: center;
   font-size: 1.2em;
   line-height: 1.5em;
@@ -490,19 +498,19 @@ footer p {
   background-color: #444;
   color: #fff;
 }
-.ittvis-framework .team {
+.ittvis-framework .ittvis-team .gallery {
   display: flex;
   flex-flow: row wrap;
   margin-bottom: 20px;
 }
-.ittvis-framework .team .member-card {
+.ittvis-framework .ittvis-team .member-card {
   width: 160px;
   padding: 10px 5px;
 }
-.ittvis-framework .team .member-card .photo {
+.ittvis-framework .ittvis-team .member-card .photo {
   margin: auto;
 }
-.ittvis-framework .team .member-card .desc .name,
-.ittvis-framework .team .member-card .desc .position {
+.ittvis-framework .ittvis-team .member-card .desc .name,
+.ittvis-framework .ittvis-team .member-card .desc .position {
   width: auto;
 }
