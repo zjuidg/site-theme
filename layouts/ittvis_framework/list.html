@@ -10,12 +10,14 @@
     <div class="col-sm content">
       <div class="section tools">
         <h1>Tools</h1>
+        {{ range .Site.Params.IttvisTools.Items }}
         <p class="link">
-          <a href="/ittvis_framework/ittvis_1.0">
+          <a href="{{ .URL }}">
             <i class="fa fa-cube" aria-hidden="true"></i>
-            <span>iTTVis_1.0 Instruction</span>
+            <span>{{ .Name }}</span>
           </a>
         </p>
+        {{ end }}
       </div>
       {{ partial "ittvis_team.html" . }}
     </div>
