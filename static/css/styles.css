@@ -484,9 +484,21 @@ footer p {
   width: 100%;
   margin: 1rem 0;
 }
-.ittvis-framework .publication img {
+.ittvis-framework .publication img,
+.ittvis-framework .project img {
   width: calc(100% - 20px);
   margin-left: 20px;
+}
+.ittvis-framework .project p {
+  margin-left: 20px;
+  margin-bottom: 0px;
+}
+.ittvis-framework .flag {
+  margin-left: 5px;
+  padding: 0 3px;
+  background-color: #555;
+  color: white;
+  border-radius: 4px;
 }
 .ittvis-framework .ittvis-team h2 {
   text-align: center;
@@ -513,4 +525,10 @@ footer p {
 .ittvis-framework .ittvis-team .member-card .desc .name,
 .ittvis-framework .ittvis-team .member-card .desc .position {
   width: auto;
+}
+.ittvis-framework table,
+.ittvis-framework table tr th,
+.ittvis-framework table tr td {
+  border:1px solid;
+  padding: 5px;
 }

@@ -41,7 +41,6 @@
 
       <div class="section right ittvis-team">
         <h1>Team</h1>
-        <h2>Core Team</h2>
         <div class="gallery">
           {{ $siteUrl := .Site.BaseURL }}
           {{ if eq .Params.demo_name "iTTVis"}}
@@ -69,9 +68,7 @@
             </div>
           {{ end }}
           {{ end }}
-        </div>
-        <h2>Collaborators</h2>
-        <div class="gallery">
+
           {{ range .Site.Params.IttvisCollaborator.Items }}
           <div class="member-card">
               <div class="photo" style="background: url({{ $siteUrl }}{{ .Photo }}">
