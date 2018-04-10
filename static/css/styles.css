@@ -493,10 +493,13 @@ footer p {
   margin-left: 20px;
   margin-bottom: 0px;
 }
+.ittvis-framework .project highlight{
+  color: #3498bd;
+}
 .ittvis-framework .flag {
   margin-left: 5px;
   padding: 0 3px;
-  background-color: #555;
+  background-color: #3498bd;
   color: white;
   border-radius: 4px;
 }

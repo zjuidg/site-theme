@@ -8,12 +8,23 @@
       </div>
     </div>
     <div class="col-sm content">
+      <div class="section instruction">
+        <h1>Project webpages</h1>
+        {{ range .Site.Params.IttvisProjects.Items }}
+        <p class="link">
+          <a href="{{ .URL }}">
+            <i class="fa fa-cube" aria-hidden="true"></i>
+            <span>{{ .Name }}</span>
+          </a>
+        </p>
+        {{ end }}
+      </div>
       <div class="section tools">
         <h1>Demos</h1>
         {{ range .Site.Params.IttvisTools.Items }}
         <p class="link">
           <a href="{{ .URL }}">
-            <i class="fa fa-cube" aria-hidden="true"></i>
+            <i class="fa fa-wrench" aria-hidden="true"></i>
             <span>{{ .Name }}</span>
           </a>
         </p>
