@@ -46,24 +46,32 @@
           {{ if eq .Params.demo_name "iTTVis"}}
           {{ range .Site.Params.IttvisCoreTeam.Items }}
             <div class="member-card">
-              <div class="photo" style="background: url({{ $siteUrl }}{{ .Photo }}">
-                  <a href="{{ .URL }}"></a>
-              </div>
-              <div class="desc">
-                  <div class="name">{{ .Name }}</div>
-                  <div class="position">{{ .Description }}</div>
+              <div class="container">
+                <div class="photo" style="background: url({{ $siteUrl }}{{ .Photo }}">
+                    <a href="{{ .URL }}"></a>
+                </div>
+                <div class="desc">
+                    <div class="name">{{ .Name }}</div>
+                    <div class="position">{{ .Position }}</div>
+                    <div class="position">{{ .College }}</div>
+                    <div class="position">{{ .School }}</div>
+                </div>
               </div>
             </div>
           {{ end }}
           {{ else }}
           {{ range .Site.Params.IssvisCoreTeam.Items }}
             <div class="member-card">
-              <div class="photo" style="background: url({{ $siteUrl }}{{ .Photo }}">
-                  <a href="{{ .URL }}"></a>
-              </div>
-              <div class="desc">
-                  <div class="name">{{ .Name }}</div>
-                  <div class="position">{{ .Description }}</div>
+              <div class="container">
+                <div class="photo" style="background: url({{ $siteUrl }}{{ .Photo }}">
+                    <a href="{{ .URL }}"></a>
+                </div>
+                <div class="desc">
+                    <div class="name">{{ .Name }}</div>
+                    <div class="position">{{ .Position }}</div>
+                    <div class="position">{{ .College }}</div>
+                    <div class="position">{{ .School }}</div>
+                </div>
               </div>
             </div>
           {{ end }}
@@ -71,13 +79,18 @@
 
           {{ range .Site.Params.IttvisCollaborator.Items }}
           <div class="member-card">
+            <div class="container">
               <div class="photo" style="background: url({{ $siteUrl }}{{ .Photo }}">
                   <a href="{{ .URL }}"></a>
               </div>
               <div class="desc">
                   <div class="name">{{ .Name }}</div>
-                  <div class="position">{{ .Description }}</div>
+                  <div class="position">{{ .Position }}</div>
+                  <div class="position">{{ .College }}</div>
+                  <div class="position">{{ .School }}</div>
               </div>
+            </div>
+            <div class="tabletennispos">{{ .TabletennisPos }}</div>
           </div>
           {{ end }}
         </div>

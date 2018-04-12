@@ -514,20 +514,36 @@ footer p {
   color: #fff;
 }
 .ittvis-framework .ittvis-team .gallery {
-  display: flex;
-  flex-flow: row wrap;
+  display: block;
   margin-bottom: 20px;
 }
 .ittvis-framework .ittvis-team .member-card {
-  width: 160px;
-  padding: 10px 5px;
+  float: none;
+  width: 90%;
+  padding: 10px 0;
+  margin: 0 auto;
 }
-.ittvis-framework .ittvis-team .member-card .photo {
+.ittvis-framework .ittvis-team .member-card .container {
+  padding: 0;
+  display: flex;
+  justify-content: flex-start;
+}
+.ittvis-framework .ittvis-team .member-card .container .photo {
+  display: inline-block;
   margin: auto;
+}
+.ittvis-framework .ittvis-team .member-card .container .desc {
+  flex: 1;
+  padding: 0 10px;
 }
 .ittvis-framework .ittvis-team .member-card .desc .name,
 .ittvis-framework .ittvis-team .member-card .desc .position {
+  text-align: left;
   width: auto;
+}
+.ittvis-framework .ittvis-team .member-card .tabletennispos {
+  font-style: italic;
+  font-size: 12px;
 }
 .ittvis-framework table,
 .ittvis-framework table tr th,
