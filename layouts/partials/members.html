@@ -1,10 +1,10 @@
 <div class="section right members">
     <div class="title">CURRENT MEMBERS</div>
-    <div class="content">
+    <div class="content clearfix">
         <div class="alert alert-success" role="alert">
             We are recruiting new PhD and master stu&shy;dents! Check <a href="/contact/">here</a> for more details.
         </div>
-        <div class="member-card professor">
+        <div class="member-card professor clearfix">
             <div class="photo" style="background: url({{ .Site.BaseURL }}images/people/ycwu.jpg">
                 <a href="http://www.ycwu.org/"></a>
             </div>
@@ -27,8 +27,21 @@
             </div>
         </div>
         {{ end }}
-        <!-- <div class="more">
-            <a href="{{ .Site.BaseURL }}people/" class="btn btn-outline-primary btn-sm">View all current and past members</a>
-        </div> -->
+    </div>
+    
+    <div class="title">PAST MEMBERS</div>
+    <div class="content clearfix">
+        {{ $siteUrl := .Site.BaseURL }}
+        {{ range .Site.Params.Members.PastItems }}
+        <div class="member-card">
+            <div class="photo" style="background: url({{ $siteUrl }}{{ .Photo }}">
+                <a href="{{ .URL }}"></a>
+            </div>
+            <div class="desc">
+                <div class="name">{{ .Name }}</div>
+                <div class="position">{{ .Graduate }}</div>
+            </div>
+        </div>
+        {{ end }}
     </div>
 </div>

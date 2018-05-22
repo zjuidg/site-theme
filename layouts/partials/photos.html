@@ -1,20 +1,20 @@
 <div id="carousel" class="carousel slide" data-ride="carousel">
   <ol class="carousel-indicators">
-    <li data-target="#carousel" data-slide-to="0" class="active"></li>
-    <li data-target="#carousel" data-slide-to="1"></li>
-    <li data-target="#carousel" data-slide-to="2"></li>
+    {{ range $index, $elem := .Site.Params.Carousel.Items }}
+    <li data-target="#carousel" class="{{ if eq $index 0 }}active{{ end }}"  data-slide-to={{$index}}></li>
+    {{ end }}
   </ol>
   <div class="carousel-inner">
     {{ $carouselHeight := .Site.Params.Carousel.Height }}
     {{ $baseUrl := .Site.BaseURL }}
     {{ range $index, $elem := .Site.Params.Carousel.Items }}
-        <div class="carousel-item {{ if eq $index 0 }}active{{ end }}"
-          style="height: {{ $carouselHeight }}px; background: url({{ $baseUrl }}{{ .Image }})">
-          <div class="carousel-caption d-none d-md-block">
-            <h3>{{ .Title }}</h3>
-            <p>{{ .Description }}</p>
-          </div>
-        </div>
+    <div class="carousel-item {{ if eq $index 0 }}active{{ end }}"
+      style="height: {{ $carouselHeight }}px; background: url({{ $baseUrl }}{{ .Image }})">
+      <div class="carousel-caption d-none d-md-block">
+        <h3>{{ .Title }}</h3>
+        <p>{{ .Description }}</p>
+      </div>
+    </div>
     {{ end }}
   </div>
   <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
