@@ -392,6 +392,19 @@ footer p {
     margin-top: 22px;
 }
 
+/* people list page */
+.people-page {
+    margin-top: 25px;
+    padding: 5px 15px 20px 15px;
+    /* padding-top: 15px;  */
+}
+
+.people-page .content .title {
+    margin: 20px 0;
+    font-size: 24px;
+    color: #888;
+    border-bottom: 2px solid #bbb;
+}
 
 /* publication single page */
 .publication-content-main .title {
