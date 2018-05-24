@@ -356,6 +356,43 @@ footer p {
     font-size: 14px;
 }
 
+/* publication list page */
+.publications-page {
+    margin-top: 25px;
+    padding-top: 15px; 
+}
+
+.publications-page .content ul {
+    padding: 0 20px 20px 20px;
+}
+
+.publications-page .content ul li {
+    padding-top: 10px;
+    list-style-type: none !important;
+}
+
+.publications-page .content ul .pubyear {
+    font-size: 24px;
+    color: #888;
+    float: none !important;
+    margin: 40px 0 16px 0 !important;
+}
+
+.publications-page .content ul li .pubimg {
+    float: left;
+    width: 260px !important;
+    height: 130px !important;
+    margin-right: 20px;
+    background-position: center center !important;
+    background-size: 100% 100% !important;
+    border: 1px solid #ddd;
+}
+
+.publications-page .content ul li .pubtitle {
+    margin-top: 22px;
+}
+
+
 /* publication single page */
 .publication-content-main .title {
   text-align: center;
