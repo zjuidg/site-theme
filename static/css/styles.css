@@ -298,7 +298,7 @@ body > .content {
     margin-right: 10px;
 }
 .member-card.professor .name {
-    padding-bottom: 3px;
+    padding-bottom: 13px;
 }
 
 .members .separator {
@@ -307,8 +307,8 @@ body > .content {
 }
 
 .member-card .photo {
-    width: 100px;
-    height: 130px;
+    width: 120px;
+    height: 156px;
     background-position: center center !important;
     background-size: cover !important;
     border: 1px solid #ddd;
@@ -330,7 +330,7 @@ body > .content {
     font-style: italic;
 }
 .member-card:not(.professor) .name, .member-card:not(.professor) .position {
-    width: 100px;
+    width: 120px;
     text-align: center;
 }
 
@@ -359,7 +359,15 @@ footer p {
 /* publication list page */
 .publications-page {
     margin-top: 25px;
-    padding-top: 15px; 
+    padding-top: 25px; 
+}
+
+.publications-page .content .title {
+
+    text-align: center;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 40px;
 }
 
 .publications-page .content ul {

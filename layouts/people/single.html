@@ -12,8 +12,10 @@
 			</div>
 			<div class="desc">
 				<div class="name">{{ .Name }}</div>
-				<div class="position">{{ .Position }}</div>
-				<div class="affiliation">{{ .Affiliation }}</div>
+				{{ range .Titles }}
+				<div class="position">{{ . }}</div>
+				{{ end }}
+				<!-- <div class="affiliation">{{ .Affiliation }}</div> -->
 			</div>
 		</div>
 		{{ end }}
@@ -36,6 +38,22 @@
 			{{ end }}
 		</div>
 		{{ end }}
+
+		<!-- Visiting Students -->
+		<div class="clearfix">
+			<div class="title">Visiting Students</div>
+			{{ range .Site.Params.Members.VisitingItems }}
+			<div class="member-card clearfix">
+					<div class="photo" style="background: url({{ $siteUrl }}{{ .Photo }}">
+						<a href="{{ .URL }}"></a>
+					</div>
+					<div class="desc">
+						<div class="name">{{ .Name }}</div>
+						<div class="position">{{ .Group }}</div>
+					</div>
+				</div>
+			{{ end }}
+		</div>
 		
 		<!-- Past Students -->
 		<div class="clearfix">
@@ -47,6 +65,7 @@
 					</div>
 					<div class="desc">
 						<div class="name">{{ .Name }}</div>
+						<div class="position">{{ .Type }}</div>
 						<div class="position">{{ .Graduate }}</div>
 					</div>
 				</div>
