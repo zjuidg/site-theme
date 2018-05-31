@@ -13,7 +13,7 @@
 			<div class="desc">
 				<div class="name">{{ .Name }}</div>
 				{{ range .Titles }}
-				<div class="position">{{ . }}</div>
+				<div class="position">{{ .  | safeHTML }}</div>
 				{{ end }}
 				<!-- <div class="affiliation">{{ .Affiliation }}</div> -->
 			</div>

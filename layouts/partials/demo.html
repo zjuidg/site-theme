@@ -1,17 +1,17 @@
-<div class="section left demo">
+<div class="section both demo">
     <div class="title"><i class="fa fa-cube" aria-hidden="true"></i> FEATURED PROJECTS</div>
     <div class="content">
         <div class="row">
             {{ $baseUrl := .Site.BaseURL }}
             {{ range .Site.Params.Demo.Items }}
-            <div class="col-sm-6">
+            <div class="col-sm-4">
                 <div class="card">
                     <div class="card-img-top" style="background: url({{ $baseUrl }}{{ .Image }})"></div>
                     <!-- <img class="card-img-top" src="{{ $baseUrl }}{{ .Image }}" alt="Card image cap" height="180"> -->
                     <div class="card-body">
                         <h4 class="card-title">
                             {{ if isset . "Page" }}
-                              <a href="{{ .Page }}">
+                              <a href="{{ .Page }}" style="display: inline;">
                                 {{ .Title }}
                               </a>
                             {{ else }}

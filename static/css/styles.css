@@ -35,17 +35,10 @@ body > .content {
     padding-bottom: 15px;
 }
 
-.col-right {
-    background-color: #eee;
-}
-
 @media (min-width: 576px) {
     body > .content {
         border-bottom-left-radius: 5px;
         border-bottom-right-radius: 5px;
-    }
-    .col-right {
-        border-left: 1px solid #ccc;
     }
 }
 
@@ -81,19 +74,19 @@ body > .content {
 }
 
 .section.right {
-    margin-top: 15px;
-    font-size: 15px;
+    margin-top: 10px;
+    font-size: 1rem;
+}
+
+.section.both {
+    margin: 10px 15px;
 }
 
 .section .title {
     margin-bottom: 5px;
     color: #222;
     font-weight: 700;
-    /*font-size: 1.2em;*/
-}
-
-.section.left .title {
-    font-size: 18px;
+    font-size: 1.2rem;
 }
 
 .section .title i {
@@ -103,7 +96,7 @@ body > .content {
 .section.right .title::before {
     content: '#';
     color: #3498db;
-    font-size: 16px;
+    font-size: 1.2rem;
     display: inline-block;
     margin-right: 6px;
 }
@@ -117,6 +110,15 @@ body > .content {
     padding: 15px 20px 0 27px;
 }
 
+.section.both .content {
+    padding: 15px 27px 0 27px;
+}
+
+.section.right .content {
+    padding-top: 15px;
+    padding-right: 27px;
+}
+
 /* about section */
 .about {
     /* text-align: justify; */
@@ -126,8 +128,9 @@ body > .content {
 
 .about .logo {
     float: right;
-    padding-left: 10px;
-    padding-top: 5px;
+    padding-left: 5px;
+    padding-right: 15px;
+    padding-top: 20px;
 }
 
 .about .logo img {
@@ -136,8 +139,12 @@ body > .content {
 }
 
 /* demo section */
-.demo .col-sm-6 {
-    padding: 0 10px 22px 10px!important;
+.demo {
+    padding: 15px;
+}
+
+.demo .col-sm-4 {
+    padding: 0 15px 22px 15px!important;
 }
 
 .demo .card-body a {
@@ -321,7 +328,7 @@ body > .content {
     text-shadow: 0 0 1px #bbb;
 }
 .member-card:not(.professor) .position {
-    font-size: 12px;
+    font-size: 14px;
 }
 .member-card .position, .member-card .affiliation {
     font-size: 14px;
@@ -363,11 +370,8 @@ footer p {
 }
 
 .publications-page .content .title {
-
     text-align: center;
-    font-weight: 500;
-    font-size: 32px;
-    line-height: 40px;
+    font-weight: 700;
 }
 
 .publications-page .content ul {
@@ -375,15 +379,15 @@ footer p {
 }
 
 .publications-page .content ul li {
-    padding-top: 10px;
     list-style-type: none !important;
 }
 
 .publications-page .content ul .pubyear {
-    font-size: 24px;
-    color: #888;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #222;
     float: none !important;
-    margin: 40px 0 16px 0 !important;
+    margin: 20px 0 5px 0 !important;
 }
 
 .publications-page .content ul li .pubimg {
@@ -408,10 +412,10 @@ footer p {
 }
 
 .people-page .content .title {
-    margin: 20px 0;
-    font-size: 24px;
-    color: #888;
-    border-bottom: 2px solid #bbb;
+    margin: 20px 0 5px 0;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #222;
 }
 
 /* publication single page */
@@ -608,6 +612,11 @@ footer p {
 .ittvis-framework table tr td {
   border:1px solid;
   padding: 5px;
+}
+
+.contact-info {
+    padding-top: 10px;
+    font-size: 1rem;
 }
 
 /* clear float */
