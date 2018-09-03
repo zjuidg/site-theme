@@ -3,10 +3,12 @@
     <div class="content">
         <ul>
             {{ range .Site.Params.News.Items }}
-            <li>
-                <div class="news_date">{{ .Date }}</div>
-                <div class="news_content">{{ .Summary | safeHTML }}</div>
-            </li>
+                {{ if eq .Show true }}
+                <li>
+                    <div class="news_date">{{ .Date }}</div>
+                    <div class="news_content">{{ .Summary | safeHTML }}</div>
+                </li>
+                {{ end }}
             {{ end }}
         </ul>
     </div>

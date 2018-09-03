@@ -168,7 +168,7 @@ body > .content {
 
 .demo .card-text {
     font-size: 14px;
-    height: 200px;
+    height: 216px;
     overflow: hidden;
 }
 
@@ -282,8 +282,8 @@ body > .content {
 
 .member-card {
     float: left;
-    padding-bottom: 10px;
-    padding-right: 10px;
+    padding-bottom: 15px;
+    padding-right: 15px;
 }
 
 .member-card:not(.professor) {
@@ -302,7 +302,7 @@ body > .content {
 
 .member-card.professor .photo {
     float: left;
-    margin-right: 10px;
+    margin-right: 15px;
 }
 .member-card.professor .name {
     padding-bottom: 13px;
@@ -314,8 +314,8 @@ body > .content {
 }
 
 .member-card .photo {
-    width: 120px;
-    height: 156px;
+    width: 148px;
+    height: 192.4px;
     background-position: center center !important;
     background-size: cover !important;
     border: 1px solid #ddd;
@@ -337,7 +337,7 @@ body > .content {
     font-style: italic;
 }
 .member-card:not(.professor) .name, .member-card:not(.professor) .position {
-    width: 120px;
+    width: 148px;
     text-align: center;
 }
 
